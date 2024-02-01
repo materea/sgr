@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+  <title>Antibiotics in Surgery</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../notes.css">
+
+</head>
+<body>
+  <input type="checkbox" id="main-navigation-toggle" class="btn btn--close" title="Toggle main navigation" />
+  <label for="main-navigation-toggle">
+    <span></span>
+  </label>
+  
+  <a href="../index.html">
+   <div class="home-navigation">
+      mtr<span class="logo-dot">.</span>
+    </div>
+  </a>
+
+
+    <nav id="main-navigation" class="nav-main">
+    <ul class="menu">
+      <li class="menu__item">
+        <a class="menu__link" href="../index.html">Home</a>
+      </li>
+
+      <li class="menu__item">
+        <a class="menu__link" href="../about-temp2.html">About</a>
+      </li>
+    </ul>
+  </nav>
+  
+      <!-- Toggle switch for dark mode -->
+      <div class="dark-mode-toggle">
+        <label class="switch-toggle">
+            <input type="checkbox" id="dark-mode-toggle-checkbox">
+            <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <!-- Progress Bar  -->
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+      
+<!-- SIDEBAR -->
+<div id="sidebar" class="sidebar">
+  <button id="closeSidebarBtn" class="btn toggle-btn close-btn">Close</button>
+  <ul class="sidebar-menu toggle-menu">
+    <!-- Add the list of topics dynamically using JavaScript -->
+  </ul>
+</div>
+
+<!-- Toggle button to open the sidebar -->
+<button id="toggleSidebarBtn" class="btn toggle-btn">&#9776;</button>
+
+<!-- END OF SIDEBAR -->
+
+  <main class="page-container">
+    <div class="contribute-cta">
+      <p>Help make this better💜</p>
+      <span><a href="../contribute.html">Contribute here</a> </span>
+    </div>
+
+
+  <!-- TOPIC AND IMAGE CONTAINER  -->
+
+
+      <h1>Antibiotics in Surgery</h1>
+
+
+  <!-- END OF TOPIC AND IMAGE CONTAINER  -->
+  
+
+
+    <article class="notes">
+        <a id='top'></a>
+    <article>
+
+          <!-- LEARNING OBJECTIVES CONTAINER  -->
+              <div class="custom-card" id="custom-card-1">
+                <div class="icon"><img src="../images/icons/light-bulb.png" alt="Icon" class="icon"></div>
+                <div class="title"> 
+                  <h2>What You Will Learn</h2>
+                </div>
+                <div class="line">
+                  <p>After reading this note, you should be able to...</p>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li><i>This content is not available yet.</i></li>
+                </ul>
+                </div>
+                <div class="read-more" onclick="toggleContent('custom-card-1')">Read More 🍪</div>
+              </div>
+            
+          <!-- END OF LEARNING OBJECTIVES CONTAINER  -->
+        
+        
+          <!-- SHOW AND HIDE OUTLINE CONTAINER  -->
+            <div class="outline2">
+        
+              <input type="radio" name="control-2" id="show-2">
+              <label for="show-2">🐵&nbsp; &nbsp;Show Outline</label>
+              <input type="radio" name="control-2" id="hide-2">
+              <label for="hide-2">🙈&nbsp; &nbsp; Hide Outline</label>
+              <div class="contents">
+                <div class="icon-box">
+                  <!-- Replace 'path/to/your/icon.png' with the actual path to your PNG icon -->
+                  <img src="../images/icons/book.png" alt="Icon" class="icon">
+                </div>
+                <div id="tableOfContents">
+                    <ol id="tocList"></ol>
+                </div>
+              </div>
+             <div>
+        
+        <!-- END OF SHOW AND HIDE OUTLINE CONTAINER  -->
+        
+        <br>
+        <br>
+
+        
+            <!-- BEGINNING OF NOTE -->
+        
+      <section id='header-1'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-1'>Introduction</a>
+          </h2>
+        </header>
+        <div class='body'>
+            <p>Antibiotics (antimicrobials) have been in use for decades, first discovered in 1928 by Sir Alexander Fleming. They are either produced by microorganisms or synthesized and are designed to kill or slow down the growth of susceptible microbes. Commonly prescribed in health facilities, their misuse is prevalent, leading to resistance and opportunistic infections. While essential in surgical practice, antibiotics come with side effects.</p>
+            
+            <h4>Definition</h4>
+            
+            <p>Antibiotics are drugs used in the treatment and prevention of bacterial infections. They are substances produced by microorganisms like bacteria or synthesized by modifying existing antibiotic compounds. Some antibiotics also exhibit antiprotozoal activity. In sufficient quantity, antibiotics kill or inhibit the growth of other microbes.</p>
+            
+        </div>
+
+      </section>
+
+      <section id='header-2'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-2'>Relevant Clinical Microbiology</a>
+          </h2>
+        </header>
+        <div class='body'>
+
+            <h4>Normal Body Flora</h4>
+            
+            <p>Different parts of the body harbor various organisms.</p>
+            <table class="note-table">
+                <tr>
+                    <th>S. No.</th>
+                    <th>Human body</th>
+                    <th>Normal flora</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Skin</td>
+                    <td>Staphylococci, Micrococci, Diphtheroids</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Oral and upper respiratory tract</td>
+                    <td>Neisseria, Bordetella, Corynebacterium, Streptococcus</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Conjunctiva</td>
+                    <td>Haemophilus and Staphylococcus</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Gastrointestinal tract</td>
+                    <td>Enterococci, non-haemolytic Streptococcus, E.coli, Lactobacillus</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Genital tract</td>
+                    <td>Corynebacterium, Lactobacillus, non-pathogenic Neisseria</td>
+                </tr>
+            </table>
+            
+            <h4>CLASSIFICATION</h4>
+            <p> Several Classification Schemes</p>
+            <ul>
+
+            
+            <h4><em>Natural / Synthetic</em> </h4>
+
+            <ul>
+              <li>Natural: Penicillin</li>
+              <li>Synthetic: Cephalosporins</li>
+            </ul>
+            
+            <h4><em>Broad / Narrow Spectrum</em></h4>
+            
+            <ul>
+              <li>Broad Spectrum: Tetracyclines</li>
+              <li>Narrow Spectrum: Penicillin</li>
+            </ul>
+            
+            <h4><em>Bactericidal / Bacteriostatic</em></h4>
+            
+            <ul>
+              <li>Bactericidal: Quinolones</li>
+              <li>Bacteriostatic: Tetracyclines</li>
+            </ul>
+            
+            <h4><em>Against Gram +ve / Gram –ve</em></h4>
+            
+            <ul>
+              <li>Gram-positive: Penicillins</li>
+              <li>Gram-negative: Cephalosporins</li>
+            </ul>
+            
+            <h4><em>By Chemical Structure Grouping</em></h4>
+            
+            <ol>
+                <li>
+                  <h4>Penicillins:</h4>
+                  <p>Examples include:</p>
+                  <ul>
+                    <li>Penicillin G</li>
+                    <li>Penicillin V</li>
+                    <li>Ampicillin (Semi-synthetic)</li>
+                    <li>Oxacillin (Semi-synthetic)</li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <h4>Tetracyclines:</h4>
+                  <p>Examples include:</p>
+                  <ul>
+                    <li>Doxycycline</li>
+                    <li>Minocycline</li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <h4>Cephalosporins:</h4>
+                  <p>Examples of first-generation cephalosporins include:</p>
+                  <ul>
+                    <li>Cephalexin (Keflex)</li>
+                    <li>Cefadroxil (Duricef)</li>
+                    <li>Cephradine (Velosef)</li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <h4>Quinolones:</h4>
+                  <p>Examples include:</p>
+                  <ul>
+                    <li>Ciprofloxacin</li>
+                    <li>Levofloxacin</li>
+                    <li>Trovafloxacin</li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <h4>Lincomycins:</h4>
+                  <p>An example is:</p>
+                  <ul>
+                    <li>Lincomycin</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <h4>Macrolides:</h4>
+                  <p>Examples include:</p>
+                  <ul>
+                    <li>Erythromycin</li>
+                    <li>Azithromycin</li>
+                    <li>Clarithromycin</li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <h4>Sulfonamides:</h4>
+                  <p>Examples include:</p>
+                  <ul>
+                    <li>Sulfamethoxazole (often combined with trimethoprim to form the antibiotic Bactrim)</li>
+                    <li>Sulfasalazine (Azulfidine)</li>
+                    <li>Sulfisoxazole (Truxazole)</li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <h4>Glycopeptides:</h4>
+                  <p>Examples include:</p>
+                  <ul>
+                    <li>Vancomycin</li>
+                    <li>Teicoplanin</li>
+                    <li>Telavancin</li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <h4>Aminoglycosides:</h4>
+                  <p>Examples include:</p>
+                  <ul>
+                    <li>Streptomycin</li>
+                    <li>Kanamycin</li>
+                    <li>Tobramycin</li>
+                    <li>Gentamicin</li>
+                    <li>Neomycin</li>
+                  </ul>
+                </li>
+              
+                <li>
+                  <h4>Carbapenems:</h4>
+                  <p>Examples include:</p>
+                  <ul>
+                    <li>Ertapenem (Invanz)</li>
+                    <li>Imipenem/cilastatin (Primaxin)</li>
+                    <li>Meropenem (Merrem IV)</li>
+                    <li>Doripenem (Doribax)</li>
+                  </ul>
+                </li>
+              </ol>
+              
+              
+            
+            <h4><em>By Mechanism of Action</em></h4>
+            
+            <ul>
+              <li>Inhibition of cell wall synthesis: Penicillins</li>
+              <li>Inhibition of protein synthesis: Tetracyclines</li>
+              <li>Inhibition of DNA replication: Quinolones</li>
+            </ul>
+            
+            <p>Please note that some antibiotics can fall into multiple categories. For example, Penicillin is a natural antibiotic, has a narrow spectrum, is bactericidal, and works against Gram-positive bacteria by inhibiting cell wall synthesis.</p>
+            
+
+            <h4>More on Antibiotic Grouping by Mechanism of Action</h4>
+
+            <p><strong>Cell Wall Synthesis Inhibitors</strong></p>
+            <ul>
+              <li>Penicillins</li>
+              <li>Cephalosporins</li>
+              <li>Vancomycin</li>
+              <li>Carbapenems</li>
+            </ul>
+            
+            <p><strong>Protein Synthesis Inhibitors</strong></p>
+            <ul>
+              <li>Aminoglycosides</li>
+              <li>Tetracyclines</li>
+              <li>Chloramphenicol</li>
+              <li>Clindamycin</li>
+            </ul>
+            
+            <p><strong>DNA Synthesis Inhibitors</strong></p>
+            <ul>
+              <li>Fluoroquinolones</li>
+              <li>Metronidazole</li>
+            </ul>
+            
+            <p><strong>RNA Synthesis Inhibitors</strong></p>
+            <ul>
+              <li>Rifampicin</li>
+            </ul>
+            
+            <p><strong>Folic Acid Synthesis Inhibitors</strong></p>
+            <ul>
+              <li>Sulfonamides</li>
+              <li>Trimethoprim</li>
+            </ul>
+            
+            <p><strong>Mycolic Acid Synthesis Inhibitors</strong></p>
+            <ul>
+              <li>Isoniazid</li>
+            </ul>
+        
+
+            <p><strong>Cell Wall Inhibitors: Bactericidal</strong></p>
+            
+            <p>During cell division, interferes by inhibiting cell wall synthesis, blocking cross-linkages through competitive inhibition of transpeptidase and carboxypeptidase enzymes. This disrupts peptidoglycan cross-linkage. Not effective against bacteria without a cell wall.</p>
+            
+            <p><strong>Examples:</strong> Penicillins, Cephalosporins</p>
+            
+            <p><strong>Cell Membrane: Bactericidal</strong></p>
+            
+            <p>Bind to the phosphate in the membrane phospholipids, leading to disruption.</p>
+            
+            <p><strong>Example:</strong> Polymixins</p>
+            
+
+            <p><strong>Protein Synthesis Inhibition: Bactericidal/Bacteriostatic</strong></p>
+
+
+            <p>Interfere with translocation by inhibiting peptidyl transferase, disrupting amino acyl-tRNA complex:</p>
+            
+            <ul>
+              <li><strong>Bacteriostatic:</strong> Chloramphenicol, Erythromycin, Lincomycin</li>
+            </ul>
+            
+            <p>Block t-RNA for bacteriostatic action, for example:</p>
+            
+            <ul>
+              <li>Tetracycline</li>
+            </ul>
+            
+            <p>Interfere with RNA attachment to Ribosomes for bactericidal effect.</p>
+            
+            <p>Interfere with RNA replication for bactericidal action, e.g., Metronidazole, Rifampicin.</p>
+            
+            <p>Inhibit DNA gyrase enzyme for bactericidal effect.</p>
+            
+            <p>Irreversible binding results in bactericidal action, while reversible binding is bacteriostatic.</p>
+            
+
+            <p><strong>Cell Metabolism: Bacteriostatic</strong> </p>
+
+            <p>Inhibit Folic acid synthesis by competing with PABA needed for folic acid synthesis.</p>
+            
+            <p>Inhibit dihydrofolate reductase enzyme required for metabolizing dihydrofolic acid to tetrahydrofolic acid.</p>
+            
+            <p><strong>Examples:</strong> Sulphonamides, Trimethoprim, Isoniazid, Ethambutol</p>
+            
+            <p>Inhibit Mycolic acid synthesis.</p>
+            
+
+        </div>
+      </section>
+
+      <section id='header-3'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-3'>Considerations in the Choice of Antibiotics</a>
+          </h2>
+        </header>
+        <div class='body'>
+
+            <ul>
+              <li>Antibiotics do not sterilize.</li>
+              <li>They are not a replacement for good surgical technique.</li>
+              <li>Should act at more than one site.</li>
+              <li>Must reach the site of action in sufficient quantity.</li>
+              <li>Avoid being inactivated by substances produced by host cells and bacteria.</li>
+              <li>Ideally, interfere with an essential metabolic process in the infecting organism without deleterious effects on host cells.</li>
+              <li>Have a selective action, killing or inhibiting sensitive bacteria at the site of infection.</li>
+            </ul>
+            
+        </div>
+      </section>
+
+      <section id='header-4'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-4'>Uses of Antibiotics in Surgery</a>
+          </h2>
+        </header>
+        <div class='body'>
+
+            <p><strong>Prophylaxis:</strong> The use of antibiotics to prevent infection</p>
+            
+            <p>Has a scientific basis, though frequently abused</p>
+            
+            <p><strong>Rationale for Antibiotic Prophylaxis</strong></p>
+            
+            <ul>
+              <li>Presence of high concentration of antibiotics in the serum and tissue at the time of contamination with bacteria.</li>
+              <li>Selected antibiotics should be bactericidal.</li>
+              <li>Choice of antibiotics influenced by the organism likely to contaminate the wound, patient factors, physico-chemical properties, side effects, and cost-effectiveness of the chosen agent.</li>
+              <li>Administration is by the intravenous route, often given at the time of induction of anesthesia and may be 2 or 3 doses for about 48 hours.</li>
+              <li>Narrow-spectrum antibiotics are preferred.</li>
+              <li>Combination agents used in some instances.</li>
+            </ul>
+            
+            <p><strong>Common procedures that require prophylaxis</strong></p>
+            
+
+            <ul>
+              <li>Implant surgery: Orthopaedic, Cardiothoracic, Neurosurgery, General surgery</li>
+              <li>Bowel surgery</li>
+              <li>Elderly patients, especially with upper abdominal incisions</li>
+              <li>Immunosuppressed patients</li>
+            </ul>
+            
+            <h4>Therapeutic Use</h4>
+            
+            <p>Administration specifically for the treatment of an established infection.</p>
+            
+            <p>Host defense mechanisms are necessary for the final elimination of the infecting pathogens.</p>
+            
+            <p>Bactericidal agents are needed for conditions such as:</p>
+            
+            <ul>
+              <li>Infective endocarditis</li>
+              <li>Immunocompromised patients</li>
+            </ul>
+            
+            <p>Where a specific infection is established, a narrow-spectrum antibiotic will be more appropriate.</p>
+            
+            <p>Compliance and correct dosing must be ensured to avoid the development of resistance.</p>
+            
+            
+        </div>
+      </section>
+
+      <section id='header-5'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-5'>Route of Administration of Antibiotics/Drugs</a>
+          </h2>
+        </header>
+        <div class='body'>
+
+            <p><strong>Enteral:</strong> Oral, Rectal, NG Tube, Gastrostomy Tube</p>
+            
+            <p><strong>Parenteral:</strong> IV, IM, Subcutaneous</p>
+            
+            <p><strong>Topical:</strong> Aerosol, Powder, Ointment, Lotion, Drops (Surgical Wounds)</p>
+            
+
+            
+        </div>
+      </section>
+
+      <section id='header-6'>
+        <header>
+          <h2>
+            <a aria-hidden='true' href='#header-6'>Surgical Wounds</a>
+          </h2>
+        </header>
+        <div class='body'>
+            
+                <p><strong>Clean Wounds:</strong> This class of wounds has minimal risk of infection (1-2% infection rate) and includes surgically incised wounds with complete adherence to all aseptic conditions without a breach of any hollow viscera. Examples include lipoma excision, thyroidectomy, simple herniorrhaphy, herniotomy, and lumpectomy. There is no need for antibiotic use in clean wounds except in immunosuppressed patients or patients having a prosthetic heart valve.</p>
+
+                <p>e.g. Herniorrhaphy, Thyroidectomy</p>
+
+                <p><strong>Clean Contaminated Wounds:</strong> This type of wound has a low risk of infection (<10% infection rate). It includes wounds involving entry into a hollow organ that is not inflamed, entry into the abscess cavity, minor breaches in aseptic procedure, and mild spillage of intra-abdominal viscous. These wounds occur during uncomplicated appendectomy and interval cholecystectomy. Prophylactic treatment with antibiotics is required.</p>
+
+                <p> e.g. Appendicectomy, Elective GI, Cholecystectomy</p>
+
+
+                <p><strong>Contaminated Wounds:</strong> These have a high rate of infection (15-20% infection rate). This occurs when there is a major breach in aseptic conditions even without entry into the abscess cavity or hollow viscus. Contaminated wounds are created de novo, such as in contamination of bile and feces, complicated appendectomy, colostomy, and cholecystectomy. Therapeutic antibiotics aimed at treatment and not prophylaxis are given.</p>
+
+                <p> e.g. Penetrating Abd. Injury, Large Tissue Injury</p>
+
+                <p><strong>Dirty or Infected Wounds:</strong> These have a very high risk of infection (>40% infection rate). Dirty wounds appear grossly infected with pus with entry into an abscess cavity, such as in the gangrenous bowel.</p>
+
+                <p> e.g. Perforated Viscus, Necrotizing Soft Tissue Infection</p>
+             
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <hr style="margin: 3rem 0;">
+
+      <!-- PRACTICE QUESTIONS CONTAINER -->
+
+      <div class="custom-card" id="custom-card-2">
+        <div class="icon"><img src="../images/icons/practice-questions.png" alt="Icon" class="icon"></div>
+        <div class="title"> 
+          <h2>Practice Questions</h2>
+        </div>
+        <div class="line">
+          <p>Check how well you grasp the concepts by answering the following questions...</p>
+        </div>
+        <div class="content">
+          <ol>
+            <li><i>This content is not available yet.</i></li>
+          </ol>
+        </div>
+        <div class="read-more" onclick="toggleContent('custom-card-2')">Read More 🍪</div>
+      </div>
+
+      <!-- END OF PRACTICE QUESTIONS CONTAINER -->
+
+
+      <!-- CONTACT- COMMENT AND CONTRIBUTORS CONTAINER -->
+      <div class="contact">
+        <div class="comment-container">
+          <div class="comment-icon">
+            <!-- Add your icon image here -->
+            <img src="../images/icons/comment.png" alt="Comment Icon">
+          </div>
+          <div class="comment-text">
+            <!-- Add your text here -->
+            <p>Send your comments, corrections, explanations/clarifications and requests/suggestions </p>
+          </div>
+          <a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1" class="comment-button">
+            here
+            <img src="../images/icons/whatsapp.png" alt="Image Icon">
+          </a>
+        </div>
+
+
+      </div>
+
+            <!-- END OF CONTACT- COMMENT AND CONTRIBUTORS CONTAINER -->
+    </article>
+   </article>
+   <div style="height: 300px;"></div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+        <div>
+          <p id="popup-trigger">disclaimer</p>
+
+          <!-- The pop-up dive content -->
+          <div id="popup" class="popup">
+            <p>The contents on this ‘website’ are for educational purposes only. The creators and operators of this website make no warranties, express or implied, regarding the accuracy, currency, or completeness of the information provided on the website. They shall not be held responsible for any errors or omissions, or for any actions taken based on the information provided on this website.</p>
+            <button class="popup-close" onclick="closePopup()">Close</button>
+          </div>    
+          <p><a href="../about-temp2.html">about</a> </p>   
+          <p><a href="../contribute.html">contribute</a> </p>
+          <p><a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1">say hi👋</a> </p>
+        </div>
+
+        <div class="footer-beta">
+          <p>thisisatestversion</p>
+        </div>
+    </div>
+  </footer>
+<!------------  SCROLL UP ----------->
+<a href="#" class="scrollup" id="scroll-up"> 
+  <i class="ri-arrow-up-fill scrollup__icon"></i>
+</a>
+<script src="../main.js"></script>
+<script src="../modal.js"></script>
+<script src="../notes-sidebar.js"></script>
+</body>
+</html>
+ 
