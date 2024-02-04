@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "Hernia",
       "Antibiotics in Surgery",
       "Gastrointestinal Hemorrhage",
-      "",
+      "Peptic Ulcer Disease",
       "",
       "",
       "",
