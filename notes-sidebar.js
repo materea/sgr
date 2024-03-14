@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "Antibiotics in Surgery",
       "Gastrointestinal Hemorrhage",
       "Peptic Ulcer Disease",
-      "",
+      "Classification and Choice of Sutures in Surgical Practice",
       "",
       "",
       "",
