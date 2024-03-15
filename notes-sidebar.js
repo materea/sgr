@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "Gastrointestinal Hemorrhage",
       "Peptic Ulcer Disease",
       "Classification and Choice of Sutures in Surgical Practice",
-      "",
+      "Pancreas",
       "",
       "",
       "",
