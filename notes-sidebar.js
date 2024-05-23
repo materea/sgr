@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
       "Pancreas",
       "Hypospadias",
       "Undescended Testes and Hernia",
+      "Intestinal Obstruction in Children",
+      "",
+      "",
+      "",
       "",
       "",
       ""
