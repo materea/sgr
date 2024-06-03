@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
       "Intestinal Obstruction in Children",
       "Urinary Tract Tumors",
       "Acute Scrotum",
+      "Carcinoma of the Prostate",
+      "Benign Prostatic hyperplasia",
       "",
       "",
       "",
