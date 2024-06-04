@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "Carcinoma of the Prostate",
       "Benign Prostatic Hyperplasia",
       "Urinary Retention",
-      "",
+      "Urolithiasis",
       "",
       ""
       // Add more topics as needed
