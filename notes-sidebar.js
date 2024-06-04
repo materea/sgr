@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
       "Urinary Tract Tumors",
       "Acute Scrotum",
       "Carcinoma of the Prostate",
-      "Benign Prostatic hyperplasia",
-      "",
+      "Benign Prostatic Hyperplasia",
+      "Urinary Retention",
       "",
       "",
       ""
