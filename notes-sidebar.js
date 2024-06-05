@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
       "Benign Prostatic Hyperplasia",
       "Urinary Retention",
       "Urolithiasis",
+      "Management of Intracranial Infections",
+      "",
+      "",
       "",
       ""
       // Add more topics as needed
