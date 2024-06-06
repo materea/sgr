@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
       "Peptic Ulcer Disease",
       "Classification and Choice of Sutures in Surgical Practice",
       "Pancreas",
+      "Thyroid Diseases",
+      "Benign and Malignant Breast Lesions",
       "Hypospadias",
       "Undescended Testes and Hernia",
       "Intestinal Obstruction in Children",
