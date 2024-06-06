@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "Urinary Retention",
       "Urolithiasis",
       "Management of Intracranial Infections",
-      "",
+      "Thyroid Diseases",
       "",
       "",
       ""
