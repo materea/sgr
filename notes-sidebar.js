@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "Benign Prostatic Hyperplasia",
       "Urinary Retention",
       "Urolithiasis",
-      "c",
+      "Obstructive Uropathy",
       "Management of Intracranial Infections",
       "",
       "",
