@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
       "Benign Prostatic Hyperplasia",
       "Urinary Retention",
       "Urolithiasis",
+      "c",
       "Management of Intracranial Infections",
-      "Thyroid Diseases",
       "",
       "",
       ""
