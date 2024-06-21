@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "Pancreas",
       "Thyroid Diseases",
       "Benign and Malignant Breast Lesions",
+      "Surgical Aspect of Typhoid Enteritis",
       "Hypospadias",
       "Undescended Testes and Hernia",
       "Intestinal Obstruction in Children",
