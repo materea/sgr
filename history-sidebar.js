@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
       "History",
       "Mental State Examination",
       "Physical Examination",
+      "Neural Tube Defect",
       "",
       ""
       // Add more topics as needed

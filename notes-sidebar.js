@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
       "Urolithiasis",
       "Obstructive Uropathy",
       "Management of Intracranial Infections",
+      "Hydrocephalus",
+      "Neural Tube Defect",
       "",
       "",
       ""
