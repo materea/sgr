@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Array of topics - you can dynamically generate this from your existing content
     var topics = [
       "Nutrition",
+      "Endocrine and Metabolic Response to Injury",
       "Hernia",
       "Antibiotics in Surgery",
       "Gastrointestinal Hemorrhage",
