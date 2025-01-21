@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLE03SBJJH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SLE03SBJJH');
+</script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -125,9 +134,34 @@
         
         <!-- END OF SHOW AND HIDE OUTLINE CONTAINER  -->
         
-        <br>
-        <br>
-
+        
+        <!-- READ SUMMARY CONTAINER -->
+        
+              <!-- Summary Overlay -->
+              <div class="summary-overlay" id="summaryOverlay"></div>
+        
+        
+              <div class="summary-card" id="summaryCard">
+                
+                <div class="summary-header">
+                  <h3>Note Summary</h3>
+                  <div class="icon-box">
+                    <!-- Replace 'path/to/your/icon.png' with the actual path to your PNG icon -->
+                    <img src="../images/icons/summary.png" alt="Icon" class="icon">
+                  </div>
+                </div>
+                <div class="summary-content">
+                  <!-- Summary content goes here -->
+                  <p><i>This content is not available yet.</i></p>
+        
+                  <span class="close-btn" id="closeBtn">close</span>
+                </div>
+              </div>
+        
+              <div class="summary-trigger" id="summaryTrigger">
+                <p>Click here to read a summary</p>
+            </div>
+        <!-- END OF READ SUMMARY CONTAINER -->
         
             <!-- BEGINNING OF NOTE -->
         
@@ -161,19 +195,6 @@
             <div class='body'>
                <p></p>
                <p></p>
-
-               <section id='heading-2-1-1'>
-                <header>
-                  <h4>
-                    <a aria-hidden href='#heading-2-1-1'></a>
-                  </h4>
-                </header>
-                <div class='body'>
-                    <p></p>
-                    <p></p>
-        
-                </div>
-              </section>
 
             </div>
           </section>
@@ -282,10 +303,45 @@
           </a>
         </div>
 
+        <div class="contributors-container">
 
+          <h2 class="contributors-header">Contributors</h2>
+  
+        <br>
+            <div class="contributor-box">
+                <img class="contributor-avatar" src="../images/icons/woman.png" alt="Contributor 1 Avatar">
+                <div class="contributor-info">
+                    <h3 class="contributor-name">Jane Smith</h3>
+                    <p class="contributor-description">She is not a real contributor.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-icon">
+                            <img src="../images/icons/whatsapp.png" alt="Social Icon 1">
+                        </a>
+                        <a href="#" target="_blank" class="social-icon">
+                            <img src="../images/icons/twitter.png" alt="Social Icon 2">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="contributor-box">
+                <img class="contributor-avatar" src="../images/icons/man.png" alt="Contributor 2 Avatar">
+                <div class="contributor-info">
+                    <h3 class="contributor-name">John Doe</h3>
+                    <p class="contributor-description">He is not a real contributor.</p>
+                    <div class="social-links">
+                      <a href="#" target="_blank" class="social-icon">
+                        <img src="../images/icons/whatsapp.png" alt="Social Icon 1">
+                    </a>
+                    <a href="#" target="_blank" class="social-icon">
+                        <img src="../images/icons/linkedin.png" alt="Social Icon 2">
+                    </a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
       </div>
-
-       
 
             <!-- END OF CONTACT- COMMENT AND CONTRIBUTORS CONTAINER -->
     </article>
@@ -305,7 +361,7 @@
           </div>    
           <p><a href="../about-temp2.html">about</a> </p>   
           <p><a href="../contribute.html">contribute</a> </p>
-
+          <p><a href="https://chat.whatsapp.com/FtDdb6uEFYzBCnTnMgm2Z1">say hi👋</a> </p>
         </div>
 
         <div class="footer-beta">
@@ -320,6 +376,77 @@
 <script src="../main.js"></script>
 <script src="../modal.js"></script>
 <script src="../notes-sidebar.js"></script>
+
+<!-- Floating TOC Button -->
+<div id="toc-button" class="floating-toc-button">
+  Table of Contents
+</div>
+
+<!-- Expandable TOC Panel -->
+<div id="toc-panel" class="toc-panel">
+  <div id="toc-panel-content">
+      <h4>Table of Contents</h4>
+      <ol id="dynamic-toc"></ol>
+  </div>
+</div>
+
+
+
+<script>
+// Dynamically generate TOC from <h2> headings within <section> elements
+  const tocList = document.getElementById('dynamic-toc');
+const sections = document.querySelectorAll('section');
+const tocButton = document.getElementById('toc-button');
+const tocPanel = document.getElementById('toc-panel');
+
+// Generate Table of Contents
+sections.forEach(section => {
+    const headings = section.querySelectorAll('h2');
+    headings.forEach(heading => {
+        const headingAnchor = heading.querySelector('a');
+        if (headingAnchor && headingAnchor.getAttribute('href')) {
+            const tocItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.textContent = headingAnchor.textContent || 'Untitled Section';
+            link.href = headingAnchor.getAttribute('href');
+            tocItem.appendChild(link);
+            tocList.appendChild(tocItem);
+        }
+    });
+});
+
+// Hide TOC button initially
+tocButton.style.display = 'none';
+
+// Show/hide TOC button on scroll
+window.addEventListener('scroll', () => {
+    // Show button after scrolling down 200 pixels
+    if (window.scrollY > 200) {
+        tocButton.style.display = 'block';
+    } else {
+        tocButton.style.display = 'none';
+        tocPanel.classList.remove('expanded');
+    }
+});
+
+// Toggle TOC panel
+tocButton.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent immediate closure
+    tocPanel.classList.toggle('expanded');
+});
+
+// Close TOC panel when clicking outside
+document.addEventListener('click', (event) => {
+    if (tocPanel.classList.contains('expanded') && 
+        !tocPanel.contains(event.target) && 
+        event.target !== tocButton) {
+        tocPanel.classList.remove('expanded');
+    }
+});
+
+
+</script>
+
 </body>
 </html>
  

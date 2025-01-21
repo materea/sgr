@@ -11,7 +11,7 @@
   --color-darker-alpha: rgba(0, 16, 40, 0.506);
   --color-yellow: #f4b400;
   --color-green: #4caf50;
-  --color-red: #ff3333;
+  --color-red: #28a745;
   --color-secondary: #57a2f8;
   --color-secondary-lighter: #d6ebf2;
   --color-secondary-lightest: #f4f4f4;
@@ -42,7 +42,7 @@ html, body {
 }
 
 body {
-  color: var(--color-darker);
+  color: var(--color-primary-dark);
   font-family: var(--font-family-primary);
   overflow-x: hidden;
    position: relative;
@@ -348,7 +348,6 @@ p {
   line-height: 1.4rem;
   color: var(--color-primary);
   font-family: var(--font-family-quartenary);
-  z-index: 98;
   border-radius: 7px;
 }
 
@@ -997,7 +996,7 @@ footer {
   margin: 0 auto;
   background-color: var(--color-darker);
   text-align: center;
-  padding: 5px 0;
+  padding: 5px 0 15px 0;
   font-family: var(--font-family-quartenary);
 }
 
@@ -1988,7 +1987,7 @@ input[type="checkbox"] {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-  z-index: 91;
+  z-index: 990;
 }
 
 .sidebar a {
@@ -2011,18 +2010,17 @@ input[type="checkbox"] {
 
 .toggle-btn {
   position: fixed;
-  bottom: 15px;
+  bottom: 0.5rem;
   left: 15px;
   background-color: var(--color-secondary);
   border: none;
   color: var(--color-darker);
-  padding: 5px 8px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 1.3rem;
   font-weight: 900;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 7px;
   z-index: 90;
