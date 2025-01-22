@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
       "Hydrocephalus",
       "Neural Tube Defect",
       "Acute Appendicitis",
-      "Rheumatic Heart Disease",
       "",
       ""
       // Add more topics as needed
