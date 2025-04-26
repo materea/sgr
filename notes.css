@@ -198,7 +198,7 @@ html {
 .outline2 .contents {
   transition: 0.2s ease-in;
   opacity: 0;
-  background-color: var(--color-secondary);
+  background-color: var(--color-darker-dark);
   color: var(--color-darker);
   border-radius: 7px;
   line-height: 2;
